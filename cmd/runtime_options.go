@@ -25,7 +25,7 @@ import (
 	"regexp"
 	"strings"
 
-	"github.com/loadimpact/k6/lib"
+	"github.com/eyotang/k6/lib"
 	"github.com/pkg/errors"
 	"github.com/spf13/pflag"
 )

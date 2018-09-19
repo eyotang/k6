@@ -35,7 +35,7 @@ import (
 	"golang.org/x/crypto/md4"
 	"golang.org/x/crypto/ripemd160"
 
-	"github.com/loadimpact/k6/js/common"
+	"github.com/eyotang/k6/js/common"
 )
 
 type Crypto struct{}

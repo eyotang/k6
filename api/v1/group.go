@@ -21,7 +21,7 @@
 package v1
 
 import (
-	"github.com/loadimpact/k6/lib"
+	"github.com/eyotang/k6/lib"
 	"github.com/manyminds/api2go/jsonapi"
 	"github.com/pkg/errors"
 )

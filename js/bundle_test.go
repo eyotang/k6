@@ -27,8 +27,8 @@ import (
 	"time"
 
 	"github.com/dop251/goja"
-	"github.com/loadimpact/k6/lib"
-	"github.com/loadimpact/k6/lib/types"
+	"github.com/eyotang/k6/lib"
+	"github.com/eyotang/k6/lib/types"
 	"github.com/spf13/afero"
 	"github.com/stretchr/testify/assert"
 	"gopkg.in/guregu/null.v3"

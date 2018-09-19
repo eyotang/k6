@@ -23,13 +23,13 @@ package modules
 import (
 	"github.com/eyotang/k6/js/modules/k6/tcp"
 
-	"github.com/loadimpact/k6/js/modules/k6"
-	"github.com/loadimpact/k6/js/modules/k6/crypto"
-	"github.com/loadimpact/k6/js/modules/k6/encoding"
-	"github.com/loadimpact/k6/js/modules/k6/html"
-	"github.com/loadimpact/k6/js/modules/k6/http"
-	"github.com/loadimpact/k6/js/modules/k6/metrics"
-	"github.com/loadimpact/k6/js/modules/k6/ws"
+	"github.com/eyotang/k6/js/modules/k6"
+	"github.com/eyotang/k6/js/modules/k6/crypto"
+	"github.com/eyotang/k6/js/modules/k6/encoding"
+	"github.com/eyotang/k6/js/modules/k6/html"
+	"github.com/eyotang/k6/js/modules/k6/http"
+	"github.com/eyotang/k6/js/modules/k6/metrics"
+	"github.com/eyotang/k6/js/modules/k6/ws"
 )
 
 // Index of module implementations.

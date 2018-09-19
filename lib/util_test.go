@@ -26,7 +26,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/loadimpact/k6/lib/types"
+	"github.com/eyotang/k6/lib/types"
 	"github.com/stretchr/testify/assert"
 )
 

@@ -21,7 +21,7 @@
 package metrics
 
 import (
-	"github.com/loadimpact/k6/stats"
+	"github.com/eyotang/k6/stats"
 )
 
 //TODO: refactor this, using non thread-safe global variables seems like a bad idea for various reasons...

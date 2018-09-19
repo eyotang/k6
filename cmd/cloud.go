@@ -29,9 +29,9 @@ import (
 	"time"
 
 	"github.com/kelseyhightower/envconfig"
-	"github.com/loadimpact/k6/lib"
-	"github.com/loadimpact/k6/stats/cloud"
-	"github.com/loadimpact/k6/ui"
+	"github.com/eyotang/k6/lib"
+	"github.com/eyotang/k6/stats/cloud"
+	"github.com/eyotang/k6/ui"
 	"github.com/pkg/errors"
 	"github.com/spf13/afero"
 	"github.com/spf13/cobra"

@@ -24,7 +24,7 @@ import (
 	"context"
 	"net/url"
 
-	"github.com/loadimpact/k6/api/v1"
+	"github.com/eyotang/k6/api/v1"
 )
 
 var MetricsURL = &url.URL{Path: "/v1/metrics"}

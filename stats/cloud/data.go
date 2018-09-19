@@ -28,9 +28,9 @@ import (
 	"strconv"
 	"time"
 
-	"github.com/loadimpact/k6/lib/metrics"
-	"github.com/loadimpact/k6/lib/netext"
-	"github.com/loadimpact/k6/stats"
+	"github.com/eyotang/k6/lib/metrics"
+	"github.com/eyotang/k6/lib/netext"
+	"github.com/eyotang/k6/stats"
 )
 
 const DataTypeSingle = "Point"

@@ -29,8 +29,8 @@ import (
 	"strings"
 	"time"
 
-	"github.com/loadimpact/k6/lib"
-	"github.com/loadimpact/k6/stats"
+	"github.com/eyotang/k6/lib"
+	"github.com/eyotang/k6/stats"
 	"golang.org/x/text/unicode/norm"
 )
 

@@ -42,9 +42,9 @@ import (
 
 	digest "github.com/Soontao/goHttpDigestClient"
 	"github.com/dop251/goja"
-	"github.com/loadimpact/k6/js/common"
-	"github.com/loadimpact/k6/lib/netext"
-	"github.com/loadimpact/k6/stats"
+	"github.com/eyotang/k6/js/common"
+	"github.com/eyotang/k6/lib/netext"
+	"github.com/eyotang/k6/stats"
 	log "github.com/sirupsen/logrus"
 	null "gopkg.in/guregu/null.v3"
 )

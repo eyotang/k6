@@ -26,8 +26,8 @@ import (
 	"fmt"
 	"os"
 
-	"github.com/loadimpact/k6/js"
-	"github.com/loadimpact/k6/lib"
+	"github.com/eyotang/k6/js"
+	"github.com/eyotang/k6/lib"
 	"github.com/spf13/afero"
 	"github.com/spf13/cobra"
 )

@@ -31,7 +31,7 @@ import (
 
 	"github.com/manyminds/api2go/jsonapi"
 
-	"github.com/loadimpact/k6/api/v1"
+	"github.com/eyotang/k6/api/v1"
 )
 
 type Client struct {

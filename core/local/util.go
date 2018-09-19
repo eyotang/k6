@@ -23,7 +23,7 @@ package local
 import (
 	"time"
 
-	"github.com/loadimpact/k6/lib"
+	"github.com/eyotang/k6/lib"
 	"gopkg.in/guregu/null.v3"
 )
 

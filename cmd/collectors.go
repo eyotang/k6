@@ -27,11 +27,11 @@ import (
 	"gopkg.in/guregu/null.v3"
 
 	"github.com/kelseyhightower/envconfig"
-	"github.com/loadimpact/k6/lib"
-	"github.com/loadimpact/k6/stats/cloud"
-	"github.com/loadimpact/k6/stats/influxdb"
-	jsonc "github.com/loadimpact/k6/stats/json"
-	"github.com/loadimpact/k6/stats/kafka"
+	"github.com/eyotang/k6/lib"
+	"github.com/eyotang/k6/stats/cloud"
+	"github.com/eyotang/k6/stats/influxdb"
+	jsonc "github.com/eyotang/k6/stats/json"
+	"github.com/eyotang/k6/stats/kafka"
 	"github.com/pkg/errors"
 	"github.com/spf13/afero"
 )

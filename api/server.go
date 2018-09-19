@@ -24,9 +24,9 @@ import (
 	"fmt"
 	"net/http"
 
-	"github.com/loadimpact/k6/api/common"
-	"github.com/loadimpact/k6/api/v1"
-	"github.com/loadimpact/k6/core"
+	"github.com/eyotang/k6/api/common"
+	"github.com/eyotang/k6/api/v1"
+	"github.com/eyotang/k6/core"
 	log "github.com/sirupsen/logrus"
 	"github.com/urfave/negroni"
 )

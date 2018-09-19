@@ -26,7 +26,7 @@ import (
 	"strings"
 
 	"github.com/kubernetes/helm/pkg/strvals"
-	"github.com/loadimpact/k6/lib/types"
+	"github.com/eyotang/k6/lib/types"
 	"github.com/mitchellh/mapstructure"
 	"github.com/pkg/errors"
 	null "gopkg.in/guregu/null.v3"

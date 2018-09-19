@@ -25,8 +25,8 @@ import (
 	"testing"
 
 	"github.com/dop251/goja"
-	"github.com/loadimpact/k6/js/common"
-	"github.com/loadimpact/k6/lib"
+	"github.com/eyotang/k6/js/common"
+	"github.com/eyotang/k6/lib"
 	"github.com/stretchr/testify/assert"
 )
 

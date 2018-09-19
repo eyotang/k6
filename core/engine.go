@@ -26,10 +26,10 @@ import (
 	"sync"
 	"time"
 
-	"github.com/loadimpact/k6/core/local"
-	"github.com/loadimpact/k6/lib"
-	"github.com/loadimpact/k6/lib/metrics"
-	"github.com/loadimpact/k6/stats"
+	"github.com/eyotang/k6/core/local"
+	"github.com/eyotang/k6/lib"
+	"github.com/eyotang/k6/lib/metrics"
+	"github.com/eyotang/k6/stats"
 	log "github.com/sirupsen/logrus"
 	"gopkg.in/guregu/null.v3"
 )

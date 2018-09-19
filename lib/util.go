@@ -23,7 +23,7 @@ package lib
 import (
 	"strings"
 
-	"github.com/loadimpact/k6/lib/types"
+	"github.com/eyotang/k6/lib/types"
 )
 
 // Returns the total sum of time taken by the given set of stages.

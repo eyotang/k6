@@ -29,7 +29,7 @@ import (
 	"time"
 
 	"github.com/dop251/goja"
-	"github.com/loadimpact/k6/js/common"
+	"github.com/eyotang/k6/js/common"
 	"github.com/pkg/errors"
 )
 

@@ -23,9 +23,9 @@ package cmd
 import (
 	"context"
 
-	"github.com/loadimpact/k6/api/v1"
-	"github.com/loadimpact/k6/api/v1/client"
-	"github.com/loadimpact/k6/ui"
+	"github.com/eyotang/k6/api/v1"
+	"github.com/eyotang/k6/api/v1/client"
+	"github.com/eyotang/k6/ui"
 	"github.com/spf13/cobra"
 	"gopkg.in/guregu/null.v3"
 )

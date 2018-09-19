@@ -26,7 +26,7 @@ import (
 	"net/http"
 
 	"github.com/julienschmidt/httprouter"
-	"github.com/loadimpact/k6/api/common"
+	"github.com/eyotang/k6/api/common"
 	"github.com/manyminds/api2go/jsonapi"
 )
 

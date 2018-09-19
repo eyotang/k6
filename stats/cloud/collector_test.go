@@ -35,12 +35,12 @@ import (
 
 	"github.com/stretchr/testify/require"
 
-	"github.com/loadimpact/k6/lib"
-	"github.com/loadimpact/k6/lib/metrics"
-	"github.com/loadimpact/k6/lib/netext"
-	"github.com/loadimpact/k6/lib/testutils"
-	"github.com/loadimpact/k6/lib/types"
-	"github.com/loadimpact/k6/stats"
+	"github.com/eyotang/k6/lib"
+	"github.com/eyotang/k6/lib/metrics"
+	"github.com/eyotang/k6/lib/netext"
+	"github.com/eyotang/k6/lib/testutils"
+	"github.com/eyotang/k6/lib/types"
+	"github.com/eyotang/k6/stats"
 )
 
 func getSampleChecker(t *testing.T, expSamples <-chan []Sample) http.HandlerFunc {

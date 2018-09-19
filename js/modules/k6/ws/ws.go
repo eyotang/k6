@@ -34,9 +34,9 @@ import (
 
 	"github.com/dop251/goja"
 	"github.com/gorilla/websocket"
-	"github.com/loadimpact/k6/js/common"
-	"github.com/loadimpact/k6/lib/metrics"
-	"github.com/loadimpact/k6/stats"
+	"github.com/eyotang/k6/js/common"
+	"github.com/eyotang/k6/lib/metrics"
+	"github.com/eyotang/k6/stats"
 )
 
 type WS struct{}

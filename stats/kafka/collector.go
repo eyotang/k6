@@ -27,10 +27,10 @@ import (
 	"time"
 
 	"github.com/Shopify/sarama"
-	"github.com/loadimpact/k6/lib"
-	"github.com/loadimpact/k6/stats"
-	"github.com/loadimpact/k6/stats/influxdb"
-	jsonc "github.com/loadimpact/k6/stats/json"
+	"github.com/eyotang/k6/lib"
+	"github.com/eyotang/k6/stats"
+	"github.com/eyotang/k6/stats/influxdb"
+	jsonc "github.com/eyotang/k6/stats/json"
 	log "github.com/sirupsen/logrus"
 )
 

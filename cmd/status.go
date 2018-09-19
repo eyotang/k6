@@ -23,8 +23,8 @@ package cmd
 import (
 	"context"
 
-	"github.com/loadimpact/k6/api/v1/client"
-	"github.com/loadimpact/k6/ui"
+	"github.com/eyotang/k6/api/v1/client"
+	"github.com/eyotang/k6/ui"
 	"github.com/spf13/cobra"
 )
 

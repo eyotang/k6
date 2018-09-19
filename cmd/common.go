@@ -27,7 +27,7 @@ import (
 	"os"
 	"sync"
 
-	"github.com/loadimpact/k6/lib/types"
+	"github.com/eyotang/k6/lib/types"
 	"github.com/spf13/afero"
 	"github.com/spf13/cobra"
 	"github.com/spf13/pflag"

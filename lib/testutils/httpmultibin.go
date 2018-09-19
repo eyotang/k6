@@ -34,7 +34,7 @@ import (
 	"time"
 
 	"github.com/gorilla/websocket"
-	"github.com/loadimpact/k6/lib/netext"
+	"github.com/eyotang/k6/lib/netext"
 	"github.com/mccutchen/go-httpbin/httpbin"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"

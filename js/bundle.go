@@ -25,11 +25,11 @@ import (
 	"encoding/json"
 
 	"github.com/dop251/goja"
-	"github.com/loadimpact/k6/js/common"
-	"github.com/loadimpact/k6/js/compiler"
-	jslib "github.com/loadimpact/k6/js/lib"
-	"github.com/loadimpact/k6/lib"
-	"github.com/loadimpact/k6/loader"
+	"github.com/eyotang/k6/js/common"
+	"github.com/eyotang/k6/js/compiler"
+	jslib "github.com/eyotang/k6/js/lib"
+	"github.com/eyotang/k6/lib"
+	"github.com/eyotang/k6/loader"
 	"github.com/pkg/errors"
 	"github.com/spf13/afero"
 )

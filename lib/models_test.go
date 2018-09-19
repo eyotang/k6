@@ -26,7 +26,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/loadimpact/k6/lib/types"
+	"github.com/eyotang/k6/lib/types"
 	"github.com/stretchr/testify/assert"
 	"gopkg.in/guregu/null.v3"
 )
@@ -43,7 +43,7 @@ func TestStageJSON(t *testing.T) {
 	assert.Equal(t, s, s2)
 }
 
-// Suggested by @nkovacs in https://github.com/loadimpact/k6/issues/207#issuecomment-330545467
+// Suggested by @nkovacs in https://github.com/eyotang/k6/issues/207#issuecomment-330545467
 func TestDataRaces(t *testing.T) {
 	t.Run("Check race", func(t *testing.T) {
 		group, err := NewGroup("test", nil)

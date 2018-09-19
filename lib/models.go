@@ -29,7 +29,7 @@ import (
 	"sync"
 	"time"
 
-	"github.com/loadimpact/k6/lib/types"
+	"github.com/eyotang/k6/lib/types"
 	"github.com/pkg/errors"
 	"gopkg.in/guregu/null.v3"
 )

@@ -24,9 +24,9 @@ import (
 	"os"
 	"time"
 
-	"github.com/loadimpact/k6/lib/types"
-	"github.com/loadimpact/k6/stats/influxdb"
-	"github.com/loadimpact/k6/ui"
+	"github.com/eyotang/k6/lib/types"
+	"github.com/eyotang/k6/stats/influxdb"
+	"github.com/eyotang/k6/ui"
 	"github.com/mitchellh/mapstructure"
 	"github.com/spf13/afero"
 	"github.com/spf13/cobra"

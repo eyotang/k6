@@ -22,7 +22,7 @@ package common
 
 import (
 	"github.com/dop251/goja"
-	"github.com/loadimpact/k6/js/compiler"
+	"github.com/eyotang/k6/js/compiler"
 )
 
 // Runs an ES6 string in the given runtime. Use this rather than writing ES5 in tests.

@@ -21,7 +21,7 @@
 package v1
 
 import (
-	"github.com/loadimpact/k6/core"
+	"github.com/eyotang/k6/core"
 	"gopkg.in/guregu/null.v3"
 )
 

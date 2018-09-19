@@ -28,7 +28,7 @@ import (
 	"fmt"
 	"net/http/httputil"
 
-	"github.com/loadimpact/k6/js/common"
+	"github.com/eyotang/k6/js/common"
 	log "github.com/sirupsen/logrus"
 )
 

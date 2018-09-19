@@ -25,9 +25,9 @@ import (
 	"net/http"
 	"net/http/cookiejar"
 
-	"github.com/loadimpact/k6/lib"
-	"github.com/loadimpact/k6/lib/netext"
-	"github.com/loadimpact/k6/stats"
+	"github.com/eyotang/k6/lib"
+	"github.com/eyotang/k6/lib/netext"
+	"github.com/eyotang/k6/stats"
 	"github.com/oxtoacart/bpool"
 	log "github.com/sirupsen/logrus"
 	"golang.org/x/time/rate"

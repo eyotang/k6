@@ -23,7 +23,7 @@ package json
 import (
 	"testing"
 
-	"github.com/loadimpact/k6/stats"
+	"github.com/eyotang/k6/stats"
 	"github.com/stretchr/testify/assert"
 )
 

@@ -23,7 +23,7 @@ package lib
 import (
 	"context"
 
-	"github.com/loadimpact/k6/stats"
+	"github.com/eyotang/k6/stats"
 )
 
 // Ensure mock implementations conform to the interfaces.

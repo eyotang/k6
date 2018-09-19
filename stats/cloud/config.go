@@ -23,7 +23,7 @@ package cloud
 import (
 	"time"
 
-	"github.com/loadimpact/k6/lib/types"
+	"github.com/eyotang/k6/lib/types"
 	"gopkg.in/guregu/null.v3"
 )
 

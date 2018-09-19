@@ -29,7 +29,7 @@ import (
 	"net/http"
 	"strconv"
 
-	"github.com/loadimpact/k6/lib"
+	"github.com/eyotang/k6/lib"
 	"github.com/pkg/errors"
 )
 

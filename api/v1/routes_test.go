@@ -26,8 +26,8 @@ import (
 	"net/http/httptest"
 	"testing"
 
-	"github.com/loadimpact/k6/api/common"
-	"github.com/loadimpact/k6/core"
+	"github.com/eyotang/k6/api/common"
+	"github.com/eyotang/k6/core"
 	"github.com/stretchr/testify/assert"
 )
 

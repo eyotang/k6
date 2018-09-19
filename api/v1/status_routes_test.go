@@ -27,8 +27,8 @@ import (
 	"net/http/httptest"
 	"testing"
 
-	"github.com/loadimpact/k6/core"
-	"github.com/loadimpact/k6/lib"
+	"github.com/eyotang/k6/core"
+	"github.com/eyotang/k6/lib"
 	"github.com/manyminds/api2go/jsonapi"
 	"github.com/stretchr/testify/assert"
 	"gopkg.in/guregu/null.v3"

@@ -27,14 +27,14 @@ import (
 	"sync"
 	"time"
 
-	"github.com/loadimpact/k6/lib/metrics"
-	"github.com/loadimpact/k6/lib/netext"
+	"github.com/eyotang/k6/lib/metrics"
+	"github.com/eyotang/k6/lib/netext"
 	"github.com/pkg/errors"
 
 	"gopkg.in/guregu/null.v3"
 
-	"github.com/loadimpact/k6/lib"
-	"github.com/loadimpact/k6/stats"
+	"github.com/eyotang/k6/lib"
+	"github.com/eyotang/k6/stats"
 	log "github.com/sirupsen/logrus"
 )
 
@@ -61,7 +61,7 @@ type Collector struct {
 
 	// TODO: optimize this
 	//
-	// Since the real-time metrics refactoring (https://github.com/loadimpact/k6/pull/678),
+	// Since the real-time metrics refactoring (https://github.com/eyotang/k6/pull/678),
 	// we should no longer have to handle metrics that have times long in the past. So instead of a
 	// map, we can probably use a simple slice (or even an array!) as a ring buffer to store the
 	// aggregation buckets. This should save us a some time, since it would make the lookups and WaitPeriod

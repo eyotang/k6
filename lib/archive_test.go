@@ -70,7 +70,7 @@ func TestArchiveReadWrite(t *testing.T) {
 			Files: map[string][]byte{
 				"/path/to/file1.txt":                 []byte(`hi!`),
 				"/path/to/file2.txt":                 []byte(`bye!`),
-				"github.com/loadimpact/k6/README.md": []byte(`README`),
+				"github.com/eyotang/k6/README.md": []byte(`README`),
 			},
 		}
 
@@ -107,7 +107,7 @@ func TestArchiveReadWrite(t *testing.T) {
 				Files: map[string][]byte{
 					fmt.Sprintf("%s/file1.txt", entry.Pwd): []byte(`hi!`),
 					fmt.Sprintf("%s/file2.txt", entry.Pwd): []byte(`bye!`),
-					"github.com/loadimpact/k6/README.md":   []byte(`README`),
+					"github.com/eyotang/k6/README.md":   []byte(`README`),
 				},
 			}
 			arc1Anon := &Archive{
@@ -127,7 +127,7 @@ func TestArchiveReadWrite(t *testing.T) {
 				Files: map[string][]byte{
 					fmt.Sprintf("%s/file1.txt", entry.PwdNormAnon): []byte(`hi!`),
 					fmt.Sprintf("%s/file2.txt", entry.PwdNormAnon): []byte(`bye!`),
-					"github.com/loadimpact/k6/README.md":           []byte(`README`),
+					"github.com/eyotang/k6/README.md":           []byte(`README`),
 				},
 			}
 

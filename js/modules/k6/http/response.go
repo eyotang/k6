@@ -31,9 +31,9 @@ import (
 	"strings"
 
 	"github.com/dop251/goja"
-	"github.com/loadimpact/k6/js/common"
-	"github.com/loadimpact/k6/js/modules/k6/html"
-	"github.com/loadimpact/k6/lib"
+	"github.com/eyotang/k6/js/common"
+	"github.com/eyotang/k6/js/modules/k6/html"
+	"github.com/eyotang/k6/lib"
 	"golang.org/x/crypto/ocsp"
 )
 

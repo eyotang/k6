@@ -30,12 +30,12 @@ import (
 	"time"
 
 	"github.com/dop251/goja"
-	"github.com/loadimpact/k6/js/common"
-	"github.com/loadimpact/k6/lib"
-	"github.com/loadimpact/k6/lib/metrics"
-	"github.com/loadimpact/k6/lib/netext"
-	"github.com/loadimpact/k6/lib/testutils"
-	"github.com/loadimpact/k6/stats"
+	"github.com/eyotang/k6/js/common"
+	"github.com/eyotang/k6/lib"
+	"github.com/eyotang/k6/lib/metrics"
+	"github.com/eyotang/k6/lib/netext"
+	"github.com/eyotang/k6/lib/testutils"
+	"github.com/eyotang/k6/stats"
 	"github.com/stretchr/testify/assert"
 )
 
@@ -359,7 +359,7 @@ func TestSystemTags(t *testing.T) {
 	})
 
 	//TODO: test for actual tag values after removing the dependency on the
-	// external service demos.kaazing.com (https://github.com/loadimpact/k6/issues/537)
+	// external service demos.kaazing.com (https://github.com/eyotang/k6/issues/537)
 	testedSystemTags := []string{"group", "status", "subproto", "url", "ip"}
 
 	samples := make(chan stats.SampleContainer, 1000)
