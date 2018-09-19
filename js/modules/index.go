@@ -21,7 +21,7 @@
 package modules
 
 import (
-	"k6/js/modules/k6/tcp"
+	"github.com/eyotang/k6/js/modules/k6/tcp"
 
 	"github.com/loadimpact/k6/js/modules/k6"
 	"github.com/loadimpact/k6/js/modules/k6/crypto"

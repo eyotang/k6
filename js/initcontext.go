@@ -24,7 +24,7 @@ import (
 	"context"
 	"strings"
 
-	"k6/js/modules"
+	"github.com/eyotang/k6/js/modules"
 
 	"github.com/dop251/goja"
 	"github.com/loadimpact/k6/js/common"
