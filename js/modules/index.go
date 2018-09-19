@@ -21,6 +21,8 @@
 package modules
 
 import (
+	"k6/js/modules/k6/tcp"
+
 	"github.com/loadimpact/k6/js/modules/k6"
 	"github.com/loadimpact/k6/js/modules/k6/crypto"
 	"github.com/loadimpact/k6/js/modules/k6/encoding"
@@ -39,4 +41,5 @@ var Index = map[string]interface{}{
 	"k6/metrics":  metrics.New(),
 	"k6/html":     html.New(),
 	"k6/ws":       ws.New(),
+	"k6/tcp":      tcp.New(),
 }
