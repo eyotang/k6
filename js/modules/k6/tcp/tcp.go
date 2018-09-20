@@ -5,6 +5,7 @@ import (
 	"net"
 	"strconv"
 
+	"fmt"
 	"github.com/pkg/errors"
 )
 
@@ -29,6 +30,11 @@ func (t *TCP) Connect(ctx context.Context, host string, port uint64) (err error)
 
 	t.ctx = ctx
 	t.conn = conn
+	return
+}
+
+func (t *TCP) Send(ctx context.Context, format []string, headers []interface{}, message []byte) {
+	fmt.Printf("Send  ====> format: %v, headers: %v, message: %v\n", format, headers, message)
 	return
 }
 

@@ -1,0 +1,61 @@
+{
+	"comment": "",
+	"ignore": "",
+	"package": [
+		{
+			"checksumSHA1": "+uvL6lrIFyv9OZ9OxIGBYR469eU=",
+			"path": "github.com/gopherjs/gopherjs/js",
+			"revision": "0210a2f0f73c96103378b0b935f39868e5731809",
+			"revisionTime": "2018-08-25T21:52:10Z"
+		},
+		{
+			"checksumSHA1": "730+/5L+YlbjZvGXskovgzO0bNE=",
+			"path": "github.com/jtolds/gls",
+			"revision": "77f18212c9c7edc9bd6a33d383a7b545ce62f064",
+			"revisionTime": "2017-05-03T22:40:06Z"
+		},
+		{
+			"checksumSHA1": "oOQ3MoSLmns6QWWan74rUaGh5Ng=",
+			"path": "github.com/smartystreets/assertions",
+			"revision": "7c9eb446e3cf06e83049467a5f25c38730ce7034",
+			"revisionTime": "2018-08-20T20:17:07Z"
+		},
+		{
+			"checksumSHA1": "1HcLWdSTwR0UkS7hLk+JWGYby8o=",
+			"path": "github.com/smartystreets/assertions/internal/go-render/render",
+			"revision": "7c9eb446e3cf06e83049467a5f25c38730ce7034",
+			"revisionTime": "2018-08-20T20:17:07Z"
+		},
+		{
+			"checksumSHA1": "/Mlt459vsuvFRHpxOiCNMasmE28=",
+			"path": "github.com/smartystreets/assertions/internal/oglematchers",
+			"revision": "7c9eb446e3cf06e83049467a5f25c38730ce7034",
+			"revisionTime": "2018-08-20T20:17:07Z"
+		},
+		{
+			"checksumSHA1": "UgevKZ6omCpKvc4iV+4FeBWn3Go=",
+			"path": "github.com/smartystreets/assertions/internal/unit",
+			"revision": "7c9eb446e3cf06e83049467a5f25c38730ce7034",
+			"revisionTime": "2018-08-20T20:17:07Z"
+		},
+		{
+			"checksumSHA1": "7Az8gijNeKCUkA+7DNP4uqaa144=",
+			"path": "github.com/smartystreets/goconvey/convey",
+			"revision": "ef6db91d284a0e7badaa1f0c404c30aa7dee3aed",
+			"revisionTime": "2018-02-22T19:45:00Z"
+		},
+		{
+			"checksumSHA1": "JCXbXPYEfuaX7XiVOUDEUXVae4U=",
+			"path": "github.com/smartystreets/goconvey/convey/gotest",
+			"revision": "ef6db91d284a0e7badaa1f0c404c30aa7dee3aed",
+			"revisionTime": "2018-02-22T19:45:00Z"
+		},
+		{
+			"checksumSHA1": "SgGP/yoMAnNwQ5ACNrxzHshWYVU=",
+			"path": "github.com/smartystreets/goconvey/convey/reporting",
+			"revision": "ef6db91d284a0e7badaa1f0c404c30aa7dee3aed",
+			"revisionTime": "2018-02-22T19:45:00Z"
+		}
+	],
+	"rootPath": "github.com/eyotang/k6"
+}
