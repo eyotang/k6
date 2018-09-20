@@ -2,11 +2,12 @@ package tcp
 
 import (
 	"context"
+	"fmt"
 	"net"
 	"strconv"
 
-	"fmt"
 	"github.com/pkg/errors"
+	"go-common/library/log"
 )
 
 type TCP struct {
@@ -33,8 +34,16 @@ func (t *TCP) Connect(ctx context.Context, host string, port uint64) (err error)
 	return
 }
 
-func (t *TCP) Send(ctx context.Context, format []string, headers []interface{}, message []byte) {
-	fmt.Printf("Send  ====> format: %v, headers: %v, message: %v\n", format, headers, message)
+func (t *TCP) Send(ctx context.Context, format []string, headers []interface{}, message []byte) (err error) {
+	var (
+		header []byte
+		bp     = new(BinaryPack)
+	)
+	if header, err = bp.Pack(format, headers); err != nil {
+		log.Error("%+v", err)
+		return
+	}
+	fmt.Printf("Send  ====> format: %v, headers: %v, message: %v\n", format, header, message)
 	return
 }
 

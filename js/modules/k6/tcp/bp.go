@@ -41,6 +41,10 @@ func (bp *BinaryPack) Pack(format []string, msg []interface{}) (res []byte, err 
 		return
 	}
 
+	//switch t := msg[1].(type) {
+	//default:
+	//	log.Error("type is: %T\n", t)
+	//}
 	order = binary.LittleEndian
 	for _, f := range format {
 		switch f {
@@ -58,26 +62,26 @@ func (bp *BinaryPack) Pack(format []string, msg []interface{}) (res []byte, err 
 			}
 			res = append(res, boolToBytes(casted_value, order)...)
 		case "h", "H":
-			casted_value, ok := msg[i].(int)
+			casted_value, ok := msg[i].(int64)
 			if !ok {
-				err = errors.New("Type of passed value doesn't match to expected '" + f + "' (int, 2 bytes)")
+				err = errors.New("Type of passed value doesn't match to expected '" + f + "' (int64, 2 bytes)")
 				return
 			}
-			res = append(res, intToBytes(casted_value, 2, order)...)
+			res = append(res, int64ToBytes(casted_value, 2, order)...)
 		case "i", "I", "l", "L":
-			casted_value, ok := msg[i].(int)
+			casted_value, ok := msg[i].(int64)
 			if !ok {
-				err = errors.New("Type of passed value doesn't match to expected '" + f + "' (int, 4 bytes)")
+				err = errors.New("Type of passed value doesn't match to expected '" + f + "' (int64, 4 bytes)")
 				return
 			}
-			res = append(res, intToBytes(casted_value, 4, order)...)
+			res = append(res, int64ToBytes(casted_value, 4, order)...)
 		case "q", "Q":
-			casted_value, ok := msg[i].(int)
+			casted_value, ok := msg[i].(int64)
 			if !ok {
-				err = errors.New("Type of passed value doesn't match to expected '" + f + "' (int, 8 bytes)")
+				err = errors.New("Type of passed value doesn't match to expected '" + f + "' (int64, 8 bytes)")
 				return
 			}
-			res = append(res, intToBytes(casted_value, 8, order)...)
+			res = append(res, int64ToBytes(casted_value, 8, order)...)
 		case "f":
 			casted_value, ok := msg[i].(float32)
 			if !ok {
@@ -153,13 +157,13 @@ func (bp *BinaryPack) UnPack(format []string, msg []byte) (res []interface{}, er
 			res = append(res, bytesToBool(msg[:1], order))
 			msg = msg[1:]
 		case "h", "H":
-			res = append(res, bytesToInt(msg[:2], order))
+			res = append(res, bytesToInt64(msg[:2], order))
 			msg = msg[2:]
 		case "i", "I", "l", "L":
-			res = append(res, bytesToInt(msg[:4], order))
+			res = append(res, bytesToInt64(msg[:4], order))
 			msg = msg[4:]
 		case "q", "Q":
-			res = append(res, bytesToInt(msg[:8], order))
+			res = append(res, bytesToInt64(msg[:8], order))
 			msg = msg[8:]
 		case "f":
 			res = append(res, bytesToFloat32(msg[:4], order))
@@ -229,16 +233,16 @@ func formatLen(format []string) (length int) {
 
 func boolToBytes(x bool, order binary.ByteOrder) []byte {
 	if x {
-		return intToBytes(1, 1, order)
+		return int64ToBytes(1, 1, order)
 	}
-	return intToBytes(0, 1, order)
+	return int64ToBytes(0, 1, order)
 }
 
 func bytesToBool(b []byte, order binary.ByteOrder) bool {
-	return bytesToInt(b, order) > 0
+	return bytesToInt64(b, order) > 0
 }
 
-func intToBytes(n int, size int, order binary.ByteOrder) []byte {
+func int64ToBytes(n int64, size int, order binary.ByteOrder) []byte {
 	buf := bytes.NewBuffer([]byte{})
 	binary.Write(buf, order, int64(n))
 	if order == binary.BigEndian {
@@ -247,26 +251,26 @@ func intToBytes(n int, size int, order binary.ByteOrder) []byte {
 	return buf.Bytes()[0:size]
 }
 
-func bytesToInt(b []byte, order binary.ByteOrder) int {
+func bytesToInt64(b []byte, order binary.ByteOrder) int64 {
 	buf := bytes.NewBuffer(b)
 
 	switch len(b) {
 	case 1:
 		var x int8
 		binary.Read(buf, order, &x)
-		return int(x)
+		return int64(x)
 	case 2:
 		var x int16
 		binary.Read(buf, order, &x)
-		return int(x)
+		return int64(x)
 	case 4:
 		var x int32
 		binary.Read(buf, order, &x)
-		return int(x)
+		return int64(x)
 	default:
 		var x int64
 		binary.Read(buf, order, &x)
-		return int(x)
+		return int64(x)
 	}
 }
 

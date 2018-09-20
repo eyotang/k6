@@ -8,7 +8,10 @@ export function setup() {
 
 export default function(data) {
 	const response = tcp.connect("10.18.98.194", 22);
-	tcp.send(data.format, [4, 1, 3], [147, 8, 1, 20, 25]);
+
+	let msg = [147, 8, 1, 20, 25]
+	let headers = [msg.length, 1, 3]
+	tcp.send(data.format, headers, msg);
 };
 
 export function teardown(data) {
