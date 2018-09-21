@@ -3,6 +3,12 @@
 	"ignore": "",
 	"package": [
 		{
+			"checksumSHA1": "ovmsdaFZYNqpmhcOnDKdwQneEiQ=",
+			"path": "github.com/eyotang/load/library/binarypack",
+			"revision": "90e6f8feb5bed1ed0f7cab3c9d2ead21e1fdddc5",
+			"revisionTime": "2018-09-21T03:41:34Z"
+		},
+		{
 			"checksumSHA1": "+uvL6lrIFyv9OZ9OxIGBYR469eU=",
 			"path": "github.com/gopherjs/gopherjs/js",
 			"revision": "0210a2f0f73c96103378b0b935f39868e5731809",

@@ -6,6 +6,7 @@ import (
 	"net"
 	"strconv"
 
+	"github.com/eyotang/load/library/binarypack"
 	"github.com/pkg/errors"
 	log "github.com/sirupsen/logrus"
 )
@@ -37,7 +38,7 @@ func (t *TCP) Connect(ctx context.Context, host string, port uint64) (err error)
 func (t *TCP) Send(ctx context.Context, format []string, headers []interface{}, message []byte) (err error) {
 	var (
 		header []byte
-		bp     = new(BinaryPack)
+		bp     = new(binarypack.BinaryPack)
 	)
 	if header, err = bp.Pack(format, headers); err != nil {
 		log.Error("%+v", err)
