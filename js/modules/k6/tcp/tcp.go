@@ -3,12 +3,10 @@ package tcp
 import (
 	"context"
 	"fmt"
-	"github.com/eyotang/load/library/header"
 	"net"
 	"strconv"
 
 	"github.com/pkg/errors"
-	log "github.com/sirupsen/logrus"
 )
 
 type TCP struct {
@@ -32,19 +30,6 @@ func (t *TCP) Connect(ctx context.Context, host string, port uint64) (err error)
 
 	t.ctx = ctx
 	t.conn = conn
-	return
-}
-
-func (t *TCP) Pack(ctx context.Context, format []string, headers []interface{}, message []byte) (data []byte, err error) {
-	var (
-		hd []byte
-		h  = header.New()
-	)
-	if hd, err = h.Pack(format, headers); err != nil {
-		log.Error("%+v", err)
-		return
-	}
-	data = append(hd, message...)
 	return
 }
 
