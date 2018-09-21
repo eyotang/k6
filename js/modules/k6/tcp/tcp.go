@@ -7,7 +7,7 @@ import (
 	"strconv"
 
 	"github.com/pkg/errors"
-	"go-common/library/log"
+	log "github.com/sirupsen/logrus"
 )
 
 type TCP struct {

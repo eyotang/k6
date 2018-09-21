@@ -15,6 +15,24 @@
 			"revisionTime": "2017-05-03T22:40:06Z"
 		},
 		{
+			"checksumSHA1": "yh76fxh0WX4iw5RRXJ9frGz12jI=",
+			"path": "github.com/konsorten/go-windows-terminal-sequences",
+			"revision": "b729f2633dfe35f4d1d8a32385f6685610ce1cb5",
+			"revisionTime": "2018-04-02T22:36:58Z"
+		},
+		{
+			"checksumSHA1": "komF71gPxDV/Cidj6O/sMdEk/TI=",
+			"path": "github.com/sirupsen/logrus",
+			"revision": "33a1e118e113c7d1dd24a80f80670864cd598519",
+			"revisionTime": "2018-09-19T11:51:26Z"
+		},
+		{
+			"checksumSHA1": "I+Wa/a+nUvazJjMRHDFNv0fQMU0=",
+			"path": "github.com/sirupsen/logrus/hooks/syslog",
+			"revision": "33a1e118e113c7d1dd24a80f80670864cd598519",
+			"revisionTime": "2018-09-19T11:51:26Z"
+		},
+		{
 			"checksumSHA1": "oOQ3MoSLmns6QWWan74rUaGh5Ng=",
 			"path": "github.com/smartystreets/assertions",
 			"revision": "7c9eb446e3cf06e83049467a5f25c38730ce7034",
