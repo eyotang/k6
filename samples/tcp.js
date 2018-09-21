@@ -11,7 +11,8 @@ export default function(data) {
 
 	let msg = [147, 8, 1, 20, 25]
 	let headers = [msg.length, 1, 3]
-	tcp.send(data.format, headers, msg);
+	let body = tcp.pack(data.format, headers, msg)
+	tcp.send(body);
 };
 
 export function teardown(data) {

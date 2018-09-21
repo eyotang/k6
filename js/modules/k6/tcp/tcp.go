@@ -3,10 +3,10 @@ package tcp
 import (
 	"context"
 	"fmt"
+	"github.com/eyotang/load/library/header"
 	"net"
 	"strconv"
 
-	"github.com/eyotang/load/library/binarypack"
 	"github.com/pkg/errors"
 	log "github.com/sirupsen/logrus"
 )
@@ -35,16 +35,21 @@ func (t *TCP) Connect(ctx context.Context, host string, port uint64) (err error)
 	return
 }
 
-func (t *TCP) Send(ctx context.Context, format []string, headers []interface{}, message []byte) (err error) {
+func (t *TCP) Pack(ctx context.Context, format []string, headers []interface{}, message []byte) (data []byte, err error) {
 	var (
-		header []byte
-		bp     = new(binarypack.BinaryPack)
+		hd []byte
+		h  = header.New()
 	)
-	if header, err = bp.Pack(format, headers); err != nil {
+	if hd, err = h.Pack(format, headers); err != nil {
 		log.Error("%+v", err)
 		return
 	}
-	fmt.Printf("Send  ====> format: %v, headers: %v, message: %v\n", format, header, message)
+	data = append(hd, message...)
+	return
+}
+
+func (t *TCP) Send(ctx context.Context, data []byte) (err error) {
+	fmt.Printf("Send  ====> message: %v\n", data)
 	return
 }
 
