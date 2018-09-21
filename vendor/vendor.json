@@ -3,10 +3,16 @@
 	"ignore": "",
 	"package": [
 		{
-			"checksumSHA1": "ovmsdaFZYNqpmhcOnDKdwQneEiQ=",
+			"checksumSHA1": "dvL6ezwx/WdrusW2JzHTv81FKto=",
 			"path": "github.com/eyotang/load/library/binarypack",
-			"revision": "90e6f8feb5bed1ed0f7cab3c9d2ead21e1fdddc5",
-			"revisionTime": "2018-09-21T03:41:34Z"
+			"revision": "b0c671c19a90e2f55d273fd0b4f927486df0ed8b",
+			"revisionTime": "2018-09-21T10:59:02Z"
+		},
+		{
+			"checksumSHA1": "kFwFIaLxGO3AzwNXDGF0Xpk2nqY=",
+			"path": "github.com/eyotang/load/library/header",
+			"revision": "b0c671c19a90e2f55d273fd0b4f927486df0ed8b",
+			"revisionTime": "2018-09-21T10:59:02Z"
 		},
 		{
 			"checksumSHA1": "+uvL6lrIFyv9OZ9OxIGBYR469eU=",
@@ -25,6 +31,12 @@
 			"path": "github.com/konsorten/go-windows-terminal-sequences",
 			"revision": "b729f2633dfe35f4d1d8a32385f6685610ce1cb5",
 			"revisionTime": "2018-04-02T22:36:58Z"
+		},
+		{
+			"checksumSHA1": "7fl8QoInOmuZo+2UnAj7oEk+O+Y=",
+			"path": "github.com/pkg/errors",
+			"revision": "c059e472caf75dbe73903f6521a20abac245b17f",
+			"revisionTime": "2018-09-11T06:21:13Z"
 		},
 		{
 			"checksumSHA1": "komF71gPxDV/Cidj6O/sMdEk/TI=",
