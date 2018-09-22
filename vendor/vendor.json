@@ -9,10 +9,16 @@
 			"revisionTime": "2018-09-21T10:59:02Z"
 		},
 		{
+			"checksumSHA1": "XUbWALASv4w2IiFF3xvnme5bHnQ=",
+			"path": "github.com/eyotang/load/library/crypto",
+			"revision": "196e48056ab10d1b0a835176e667db0dc89e39dd",
+			"revisionTime": "2018-09-22T00:04:51Z"
+		},
+		{
 			"checksumSHA1": "kFwFIaLxGO3AzwNXDGF0Xpk2nqY=",
 			"path": "github.com/eyotang/load/library/header",
-			"revision": "b0c671c19a90e2f55d273fd0b4f927486df0ed8b",
-			"revisionTime": "2018-09-21T10:59:02Z"
+			"revision": "196e48056ab10d1b0a835176e667db0dc89e39dd",
+			"revisionTime": "2018-09-22T00:04:51Z"
 		},
 		{
 			"checksumSHA1": "+uvL6lrIFyv9OZ9OxIGBYR469eU=",
