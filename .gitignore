@@ -8,6 +8,9 @@
 /debug
 test.debug
 
+*.proto
+*.pb.go
+
 .vscode
 *.sublime-workspace
 .idea
