@@ -15,12 +15,6 @@
 			"revisionTime": "2018-09-22T00:04:51Z"
 		},
 		{
-			"checksumSHA1": "kFwFIaLxGO3AzwNXDGF0Xpk2nqY=",
-			"path": "github.com/eyotang/load/library/header",
-			"revision": "196e48056ab10d1b0a835176e667db0dc89e39dd",
-			"revisionTime": "2018-09-22T00:04:51Z"
-		},
-		{
 			"checksumSHA1": "P2MjN6jUZFovnuK05mgmZGtgYnA=",
 			"path": "github.com/golang/protobuf/jsonpb",
 			"revision": "6e3d092c77c3bae25acf4925942b568e742c1c20",

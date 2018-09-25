@@ -7,6 +7,7 @@ import (
 	"strconv"
 
 	"github.com/eyotang/k6/js/common"
+	"github.com/labstack/gommon/log"
 	"github.com/pkg/errors"
 )
 
@@ -37,6 +38,9 @@ func (t *TCP) Connect(ctx context.Context, host string, port uint64) (err error)
 }
 
 func (t *TCP) Send(ctx context.Context, data []byte) (err error) {
+	var (
+		size int
+	)
 
 	state := common.GetState(ctx)
 
@@ -48,6 +52,12 @@ func (t *TCP) Send(ctx context.Context, data []byte) (err error) {
 	}
 
 	fmt.Printf("Send  ====> message: %v\n", data)
+	if size, err = t.conn.Write(data); err != nil {
+		log.Error("%+v", err)
+	}
+	if size != len(data) {
+		log.Errorf("send message failed! expected: %d, actual: %d", len(data), size)
+	}
 	return
 }
 
