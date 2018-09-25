@@ -27,6 +27,12 @@
 			"revisionTime": "2018-09-17T22:48:16Z"
 		},
 		{
+			"checksumSHA1": "klikqqBqHj21FEDyvrzoCqyiiXs=",
+			"path": "github.com/golang/protobuf/proto",
+			"revision": "6e3d092c77c3bae25acf4925942b568e742c1c20",
+			"revisionTime": "2018-09-17T22:48:16Z"
+		},
+		{
 			"checksumSHA1": "+uvL6lrIFyv9OZ9OxIGBYR469eU=",
 			"path": "github.com/gopherjs/gopherjs/js",
 			"revision": "0210a2f0f73c96103378b0b935f39868e5731809",

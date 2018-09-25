@@ -3,10 +3,10 @@ package tcp
 import (
 	"context"
 	"fmt"
-	"github.com/eyotang/k6/js/common"
 	"net"
 	"strconv"
 
+	"github.com/eyotang/k6/js/common"
 	"github.com/pkg/errors"
 )
 
